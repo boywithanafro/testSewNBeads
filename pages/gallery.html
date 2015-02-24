@@ -5,9 +5,12 @@
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-	<link href="../css/about.css" rel="stylesheet" type="text/css">
+	<link href="../css/gallery.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" type="image/png" href="../favicon.png"/>
 	<title>Sew'n'Beads | Gallery</title>
+	<!--[if IE]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 <body>
 
@@ -31,23 +34,22 @@
 
 		<div id="socialGroup">
 			<a href="http://instagram.com/">
-				<img src="../socialIcons/instagram.svg" class="socialInstagram" id="iconInstagram" alt="">
+				<img title="Instagram" src="../socialIcons/instagram.svg" class="socialInstagram" id="iconInstagram" alt="">
 			</a>
 			<a href="https://twitter.com/?lang=en-gb">
-				<img src="../socialIcons/twitter3.svg" class="socialInstagram" id="iconTwitter" alt="">
+				<img title="Twitter" src="../socialIcons/twitter3.svg" class="socialInstagram" id="iconTwitter" alt="">
 			</a>
 			<a href="https://www.facebook.com/">
-				<img src="../socialIcons/facebook.svg" class="socialInstagram" id="iconFacebook" alt="">
+				<img title="Facebook" src="../socialIcons/facebook.svg" class="socialInstagram" id="iconFacebook" alt="">
 			</a>
 			<a href="https://uk.pinterest.com/">
-				<img src="../socialIcons/pintrest.svg" class="socialInstagram" id="iconPintrest" alt="">
+				<img title="Pintrest" src="../socialIcons/pintrest.svg" class="socialInstagram" id="iconPintrest" alt="">
 			</a>
 			<a href="mailto:sewbeads45@gmail.com?Subject=Hello%20again">
-				<img src="../socialIcons/share.svg" class="socialInstagram" id="iconShare" alt="">
+				<img title="Share" src="../socialIcons/share.svg" class="socialInstagram" id="iconShare" alt="">
 			</a>
 		</div>
 
-		<div class="poopooweeweelol">
 		<nav>
 			<ul class="nav">
 				<li><a href="../index.html">Home</a></li>
@@ -57,7 +59,6 @@
 				<li><a href="about.html">About Us</a></li>
 			</ul>
 		</nav>
-		</div>
 
 	</header>
 
@@ -78,11 +79,20 @@
 			</ul>
 
 			<div class="writingWrapper">
-                            <p><br>Pictures are pieces of time that have been captured, a picture can make the human mind remember a specific event that happened at a specific time, pictures can remind a person of what they achieved at that moment in time.</p>
+                <p><br>Pictures are pieces of time that have been captured, a picture can make the human mind remember a specific event that happened at a specific time, pictures can remind a person of what they achieved at that moment in time.</p>
 
-                            <br><br><br><br>
+                    <br><br><br><br>
 
-				<h6>Sew'n'Beads</h6>
+						<div id="imagesWrapper">
+							<ul>
+								<li><a class="fancybox" rel="group" href="../galleryImages/lg/joker.jpg" title="Joker 1"><img src="../galleryImages/tn/joker2.jpg" alt="Joker 1"></a></li>
+								<li><a class="fancybox" rel="group" href="../galleryImages/lg/sewing.jpg" title="Sewing HD"><img src="../galleryImages/tn/sewing.jpg" alt="Sewing"></a></li>
+								<li><a class="fancybox" rel="group" href="../galleryImages/lg/joker.jpg" title="Joker 3"><img src="../galleryImages/tn/joker2.jpg" alt="Joker 3"></a></li>
+								<li><a class="fancybox" rel="group" href="../galleryImages/lg/joker.jpg" title="Joker 4"><img src="../galleryImages/tn/joker2.jpg" alt="Joker 4"></a></li>
+							</ul>
+						</div>
+
+						<br><br>
 			</div>
 
 		</div>
@@ -111,7 +121,22 @@
 	$(function() {
 		$(".rslides").responsiveSlides();
 	});
-</script>
+	</script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="../galleryImages/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="../galleryImages/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+	</script>
+
+
 
 </body>
 </html>

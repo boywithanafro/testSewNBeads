@@ -30,6 +30,9 @@ img, object, embed, video {
     padding:0;
 }
 
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
 /*******************************************************************************************/
 /* Mobile Layout: 480px and below. */
 /*******************************************************************************************/
@@ -890,6 +893,7 @@ a{
 	font-family: 'Lobster', cursive;
 	color: #cccccc;
 	z-index: 2;
+	overflow: none;
 }
 
 #contentTitle{
@@ -897,6 +901,8 @@ a{
 	text-align: center;
 	font-size: 100px;
 	font-family: "Lobster";
+	text-shadow: 3px 3px 1px #000;
+	padding-bottom: 20px;
 }
 
 .rslides {
@@ -961,101 +967,27 @@ a{
 	color: red;
 }
 
-table{
-    width: 60%;
-    margin: 0 auto;
+#imagesWrapper{
+	width: 81%;
+	height: 600px;
+	margin: 0 auto;
 }
 
-table *{
-    color: #000;
-    padding: 0px;
-    margin: 0px;
+#imagesWrapper ul{
+	list-style: none;
+	margin: 0 auto;
+	width: 100%;
+	overflow: none;
 }
 
-table tr td{
-    width: 50%;
-}
-
-.classesCategoriesLeft{
-    float: left;
-    height: 190px;
-    width: 100%;
-    border: 3px dashed #000;
-    border-radius: 7px;
-    text-align: center;
-    margin: 0 auto 30px auto;
-}
-
-.classesCategoriesRight{
-    height: 190px;
-    width: 85%;
-    border: 3px dashed #000;
-    border-radius: 7px;
-    text-align: center;
-    margin: 0 auto 30px auto;
-}
-
-.textLol{
+#imagesWrapper li{
 	height: 200px;
-	width: 85%;
-	border: 1px solid red;
+	width: 200px;
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 10px;
 }
 
-.classesCategoriesLeft h2{
-    margin: 80px auto;
-}
-
-.classesCategoriesRight h2{
-    margin: 80px auto;
-}
-
-.classesCategoriesLeft:hover{
-	background-color: #FFF;
-}
-
-.classesCategoriesRight:hover{
-	background-color: #FFF;
-}
-
-#sewingBeginners{
-    background-color: darkcyan;
-}
-
-#moreSewing{
-    background-color: darkmagenta;
-}
-
-#patchwork{
-    background-color: crimson;
-}
-
-#dressmaking{
-    background-color: greenyellow;
-}
-
-#workshop{
-    background-color: mediumturquoise;
-}
-
-#parties{
-    background-color: navajowhite;
-}
-
-#quiltKnitAndNatter{
-    background-color: chocolate;
-}
-
-#childrensClasses{
-    background-color: deeppink;
-}
-
-#curtainsAndCushions{
-	background-color: #8C6C84;
-}
-
-#xmasWorkshops{
-	background-color: #0FBD7D;
-}
 
 #motoWrapper{
 	float: left;
