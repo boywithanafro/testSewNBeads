@@ -905,6 +905,11 @@ a{
 	padding-bottom: 20px;
 }
 
+.contentWrapper h2{
+	float: left;
+	color: #5F6266;
+}
+
 .rslides {
 	text-align: center;
 	position: relative;
@@ -968,9 +973,10 @@ a{
 }
 
 #imagesWrapper{
-	width: 81%;
-	height: 600px;
+	width: 90%;
+	height: auto;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 #imagesWrapper ul{
@@ -978,14 +984,27 @@ a{
 	margin: 0 auto;
 	width: 100%;
 	overflow: none;
+	z-index: 15;
+	position: relative;
 }
 
 #imagesWrapper li{
 	height: 200px;
 	width: 200px;
 	float: left;
-	padding-right: 10px;
-	padding-bottom: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	z-index: 15;
+	position: relative;
+	border: 3px dashed red;
+}
+
+#imagesWrapper img:hover{
+	opacity: 0.7;
+}
+
+#imagesWrapper li:hover{
+	border: 3px dashed #000;
 }
 
 
@@ -1012,6 +1031,7 @@ a{
         color: #77BFF2;
         font-size: 6em;
         letter-spacing: 10px;
+        z-index: 10;
 }
 
 
