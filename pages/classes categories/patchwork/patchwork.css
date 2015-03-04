@@ -61,7 +61,7 @@ a{
 
 
 body{
-	background-image: url("../swirl_pattern/swirl_pattern.png");
+	background-image: url("../../../swirl_pattern/swirl_pattern.png");
 }
 
 a{
@@ -239,96 +239,6 @@ a{
 	text-align: center;
 }
 
-table{
-    width: 60%;
-    margin: 0 auto;
-}
-
-table *{
-    color: #000;
-    padding: 0px;
-    margin: 0px;
-}
-
-table tr td{
-    width: 50%;
-}
-
-.classesCategoriesLeft{
-    float: left;
-    height: 190px;
-    width: 85%;
-    border: 3px dashed #000;
-    border-radius: 7px;
-    text-align: center;
-    margin: 0 auto 30px auto;
-}
-
-.classesCategoriesRight{
-    height: 190px;
-    width: 85%;
-    border: 3px dashed #000;
-    border-radius: 7px;
-    text-align: center;
-    margin: 0 auto 30px auto;
-}
-
-.classesCategoriesLeft h2{
-    margin: 80px auto;
-}
-
-.classesCategoriesRight h2{
-    margin: 80px auto;
-}
-
-.classesCategoriesLeft:hover{
-	background-color: #FFF;
-}
-
-.classesCategoriesRight:hover{
-	background-color: #FFF;
-}
-
-#sewingBeginners{
-    background-color: darkcyan;
-}
-
-#moreSewing{
-    background-color: darkmagenta;
-}
-
-#patchwork{
-    background-color: crimson;
-}
-
-#dressmaking{
-    background-color: greenyellow;
-}
-
-#workshop{
-    background-color: mediumturquoise;
-}
-
-#parties{
-    background-color: navajowhite;
-}
-
-#quiltKnitAndNatter{
-    background-color: chocolate;
-}
-
-#childrensClasses{
-    background-color: deeppink;
-}
-
-#curtainsAndCushions{
-	background-color: #8C6C84;
-}
-
-#xmasWorkshops{
-	background-color: #0FBD7D;
-}
-
 #motoWrapper{
 	float: left;
 	width: 14%;
@@ -365,7 +275,6 @@ table tr td{
 }
 
 .footerWrapper{
-	display: none;
 	clear: both;
 	width: 100%;
 	height: auto;
@@ -412,7 +321,7 @@ table tr td{
 
 
 body{
-	background-image: url("../swirl_pattern/swirl_pattern.png");
+  background-image: url("../../../swirl_pattern/swirl_pattern.png");
 }
 
 a{
@@ -441,6 +350,7 @@ a{
 }
 
 #backupSocialGroup{
+        display: block;
 	float: right;
 	width: 60px;
 	height: auto;
@@ -520,7 +430,7 @@ a{
 	border-left-color: #E065CA;
 	border-right-color: #A31C8A;
 	border-bottom-color: #A31C8A;
-	height: 1200px;
+	height: 1750px;
 	width: 60%;
 	background-color: #FAFAFA;
 	font-family: 'Lobster', cursive;
@@ -590,7 +500,7 @@ a{
 }
 
 table{
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -600,83 +510,66 @@ table *{
     margin: 0px;
 }
 
-table tr td{
-    width: 50%;
-}
-
-.classesCategoriesLeft{
-    float: left;
-    height: 190px;
-    width: 85%;
-    border: 3px dashed #000;
-    border-radius: 7px;
+td{
+    width: 33.3%;
     text-align: center;
-    margin: 0 auto 30px auto;
 }
 
-.classesCategoriesRight{
-    height: 190px;
-    width: 85%;
-    border: 3px dashed #000;
-    border-radius: 7px;
-    text-align: center;
-    margin: 0 auto 30px auto;
+td h3{
+	text-decoration: underline;
 }
 
-.classesCategoriesLeft h2{
-    margin: 80px auto;
+td p{
+	font-weight: normal;
 }
 
-.classesCategoriesRight h2{
-    margin: 80px auto;
+td img{
+	margin: auto 0;
+	height: 140px;
+	width: 100%;
 }
 
-.classesCategoriesLeft:hover{
-	background-color: #FFF;
+tr{
+	height: 180px;
+	border-radius: 7px;
 }
 
-.classesCategoriesRight:hover{
-	background-color: #FFF;
+table tr td h3:hover{
+	color: #E065CA;
 }
 
-#sewingBeginners{
-    background-color: darkcyan;
+.rowTypeOne{
+	background-color: #E8DE9E;
 }
 
-#moreSewing{
-    background-color: darkmagenta;
+.rowTypeTwo{
+	background-color: #D5E0F7;
 }
 
-#patchwork{
-    background-color: crimson;
+.secondData{
+	width: 46.3%;
 }
 
-#dressmaking{
-    background-color: greenyellow;
+.thirdData{
+	width: 20.3%;
 }
 
-#workshop{
-    background-color: mediumturquoise;
+
+.moreInfoButton{
+	border-radius: 14px;
+	width: 100%;
+	height: 50px;
+	background-color: #2382C4;
 }
 
-#parties{
-    background-color: navajowhite;
+.moreInfoButton:hover{
+	background-color: #49C46A;
 }
 
-#quiltKnitAndNatter{
-    background-color: chocolate;
-}
-
-#childrensClasses{
-    background-color: deeppink;
-}
-
-#curtainsAndCushions{
-	background-color: #8C6C84;
-}
-
-#xmasWorkshops{
-	background-color: #0FBD7D;
+.moreInfoButton p{
+	text-align: center;
+	color: #FFF;
+	padding: 5% 0;
 }
 
 #motoWrapper{
@@ -691,32 +584,31 @@ table tr td{
 }
 
 #moto{
-	display: none;
+        display: block;
 	margin-left: -115%;
 	float: left;
 	margin-top: 1.5em;
 	width: 900px;
 	-ms-transform: rotate(270deg); /* IE 9 */
-		-webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
-		transform: rotate(270deg);
-		color: #77BFF2;
-		font-size: 6em;
-		letter-spacing: 10px;
+        -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+        transform: rotate(270deg);
+        color: #77BFF2;
+        font-size: 6em;
+        letter-spacing: 10px;
 }
 
 
 
 .twitterWrapper{
-    display: block;
+        display: block;
 	width: 330px;
 	height: 10em;
 	float: right;
-	margin-top: -76em;
+	margin-top: -110.5em;
 	margin-right: 10px;
 }
 
 .footerWrapper{
-	display: block;
 	clear: both;
 	width: 100%;
 	height: auto;
@@ -732,8 +624,6 @@ table tr td{
 .footerWrapper > h6{
 	text-align: center;
 }
-
-
 
 
 .zeroMargin_tablet {
@@ -769,7 +659,7 @@ table tr td{
 
 
 body{
-  background-image: url("../swirl_pattern/swirl_pattern.png");
+  background-image: url("../../../swirl_pattern/swirl_pattern.png");
 }
 
 a{
@@ -798,7 +688,7 @@ a{
 }
 
 #backupSocialGroup{
-        display: block;
+    display: block;
 	float: right;
 	width: 60px;
 	height: auto;
@@ -848,6 +738,7 @@ a{
 .nav{
 	overflow: hidden;
 	text-align: center;
+	margin-top: -50px;
 	background-color: #E83199;
 	height: auto;
 	margin-top: -20px;
@@ -866,13 +757,6 @@ a{
 	color: #FAFAFA;
 }
 
-.fixed{
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 20;
-	margin-top: 20px;
-}
 
 .contentWrapper{
 	margin-top: 7em;
@@ -884,7 +768,7 @@ a{
 	border-left-color: #E065CA;
 	border-right-color: #A31C8A;
 	border-bottom-color: #A31C8A;
-	height: 1200px;
+	height: 1400px;
 	width: 60%;
 	background-color: #FAFAFA;
 	font-family: 'Lobster', cursive;
@@ -945,7 +829,7 @@ a{
 .writingWrapper > p{
 	text-align: center;
 	color: #000;
-	font-size: 24px;
+	font-size: 30px;
 }
 
 .writingWrapper > h6{
@@ -953,16 +837,8 @@ a{
 	text-align: center;
 }
 
-.writingWrapper ul{
-	color: #000;
-}
-
-.writingWrapper ul li a{
-	color: red;
-}
-
 table{
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -972,89 +848,66 @@ table *{
     margin: 0px;
 }
 
-table tr td{
-    width: 50%;
-}
-
-.classesCategoriesLeft{
-    float: left;
-    height: 190px;
-    width: 100%;
-    border: 3px dashed #000;
-    border-radius: 7px;
+td{
+    width: 33.3%;
     text-align: center;
-    margin: 0 auto 30px auto;
 }
 
-.classesCategoriesRight{
-    height: 190px;
-    width: 85%;
-    border: 3px dashed #000;
-    border-radius: 7px;
-    text-align: center;
-    margin: 0 auto 30px auto;
+td h3{
+	text-decoration: underline;
 }
 
-.textLol{
-	height: 200px;
-	width: 85%;
-	border: 1px solid red;
+td p{
+	font-weight: normal;
 }
 
-.classesCategoriesLeft h2{
-    margin: 80px auto;
+td img{
+	margin: auto 0;
+	height: 140px;
+	width: 100%;
 }
 
-.classesCategoriesRight h2{
-    margin: 80px auto;
+tr{
+	height: 180px;
+	border-radius: 7px;
 }
 
-.classesCategoriesLeft:hover{
-	background-color: #FFF;
+table tr td h3:hover{
+	color: #E065CA;
 }
 
-.classesCategoriesRight:hover{
-	background-color: #FFF;
+.rowTypeOne{
+	background-color: #E8DE9E;
 }
 
-#sewingBeginners{
-    background-color: darkcyan;
+.rowTypeTwo{
+	background-color: #D5E0F7;
 }
 
-#moreSewing{
-    background-color: darkmagenta;
+.secondData{
+	width: 46.3%;
 }
 
-#patchwork{
-    background-color: crimson;
+.thirdData{
+	width: 20.3%;
 }
 
-#dressmaking{
-    background-color: greenyellow;
+
+.moreInfoButton{
+	border-radius: 14px;
+	width: 100%;
+	height: 50px;
+	background-color: #2382C4;
 }
 
-#workshop{
-    background-color: mediumturquoise;
+.moreInfoButton:hover{
+	background-color: #49C46A;
 }
 
-#parties{
-    background-color: navajowhite;
-}
-
-#quiltKnitAndNatter{
-    background-color: chocolate;
-}
-
-#childrensClasses{
-    background-color: deeppink;
-}
-
-#curtainsAndCushions{
-	background-color: #8C6C84;
-}
-
-#xmasWorkshops{
-	background-color: #0FBD7D;
+.moreInfoButton p{
+	text-align: center;
+	color: #FFF;
+	padding: 5% 0;
 }
 
 #motoWrapper{
@@ -1089,7 +942,7 @@ table tr td{
 	width: 330px;
 	height: 10em;
 	float: right;
-	margin-top: -76em;
+	margin-top: -88.5em;
 	margin-right: 10px;
 }
 
@@ -1331,6 +1184,43 @@ table tr td{
 
 }
 
+@media screen and (max-width: 977px) { /*Size ajustment to the content Wrapper + page content title for laptop support (Overlapping)*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+        
+        #contentTitle{
+            font-size: 80px;
+        }
+
+}
+
+@media screen and (max-width: 929px) { /*Last Moto Re-arrangment*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+        
+	#moto{
+		height: 11em;
+		font-size: 3.5em;
+	}
+
+}
+
 @media screen and (max-width: 785px) { /*Size ajustment to the content title for laptop support (Overlapping) Again!!!*/
 
 	.gridContainer {
@@ -1342,6 +1232,10 @@ table tr td{
 		float: none;
 		margin-left: auto;
 	}
+
+    #contentTitle{
+        font-size: 60px;
+    }
 
     #backupSocialGroup{
     	display: none;

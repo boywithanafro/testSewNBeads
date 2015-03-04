@@ -275,7 +275,6 @@ a{
 }
 
 .footerWrapper{
-	display: none;
 	clear: both;
 	width: 100%;
 	height: auto;
@@ -1293,8 +1292,16 @@ table tr td h3:hover{
 		margin-left: auto;
 	}
 
-        #contentTitle{
-            font-size: 60px;
-        }
+    #contentTitle{
+        font-size: 60px;
+    }
+
+    #backupSocialGroup{
+    	display: none;
+    }
+
+    #moto{
+    	display: none;
+    }
 
 }

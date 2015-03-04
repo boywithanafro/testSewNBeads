@@ -1282,3 +1282,25 @@ a{
 	}
 
 }
+
+@media screen and (max-width: 785px) { /*Size ajustment to the content title for laptop support (Overlapping) Again!!!*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+    #backupSocialGroup{
+    	display: none;
+    }
+
+    #moto{
+    	display: none;
+    }
+
+}
