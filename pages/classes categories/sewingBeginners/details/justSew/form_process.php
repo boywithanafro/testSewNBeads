@@ -1,13 +1,14 @@
 <?php
 
 $subject = "SewBeads email, Website";
-$text = 'Person Email: ' .$_POST['user_email'] ."\n"
+$text = 'Persons Email: ' .$_POST['user_email'] ."\n"
+	   ."Person's Name: " .$_POST['user_name'] ."\n"
 	   .'User Comment: ' ."\n"."\n"
-	   .$_POST['comments'];
+	   .$_POST['user_comments'];
 $to = "sewbeads45@gmail.com";
-$headers = 'From: SewBeads';
+$headers = 'From: SewBeads Website';
 
 mail ($to,$subject,$text,$headers);
-echo "Your Message has been sent!";
+echo "Your Message has been sent, Sew'n'Beads will reply to your email within 3 hours. Thank you for your inquirery!";
 
 ?>

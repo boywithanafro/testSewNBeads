@@ -47,21 +47,12 @@ img, object, embed, video {
 *{
 	padding: 0;
 	margin: 0;
-}
-a{
-	text-decoration: none;
-	color: inherit;
-}
-
-*{
-	padding: 0;
-	margin: 0;
 	font-family: "Oswald";
 }
 
 
 body{
-	background-image: url("../../../../../swirl_pattern/swirl_pattern.png");
+  background-image: url("../../../../../swirl_pattern/swirl_pattern.png");
 }
 
 a{
@@ -90,7 +81,7 @@ a{
 }
 
 #backupSocialGroup{
-        display: none;
+        display: block;
 	float: right;
 	width: 60px;
 	height: auto;
@@ -140,9 +131,8 @@ a{
 .nav{
 	overflow: hidden;
 	text-align: center;
-	margin-top: -50px;
 	background-color: #E83199;
-	height: auto;		/*  Was 60px  */
+	height: auto;
 	margin-top: -20px;
 }
 
@@ -159,6 +149,13 @@ a{
 	color: #FAFAFA;
 }
 
+.fixed{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+	margin-top: 20px;
+}
 
 .contentWrapper{
 	margin-top: 7em;
@@ -170,7 +167,7 @@ a{
 	border-left-color: #E065CA;
 	border-right-color: #A31C8A;
 	border-bottom-color: #A31C8A;
-	height: 1200px;
+	height: 1600px;
 	width: 60%;
 	background-color: #FAFAFA;
 	font-family: 'Lobster', cursive;
@@ -181,8 +178,9 @@ a{
 #contentTitle{
 	color: #474AEA;
 	text-align: center;
-	font-size: 50px;
+	font-size: 100px;
 	font-family: "Lobster";
+	text-shadow: 3px 3px 1px #000;
 }
 
 .rslides {
@@ -231,7 +229,7 @@ a{
 .writingWrapper > p{
 	text-align: center;
 	color: #000;
-	font-size: 30px;
+	font-size: 24px;
 }
 
 .writingWrapper > h6{
@@ -239,94 +237,58 @@ a{
 	text-align: center;
 }
 
-table{
-    width: 60%;
-    margin: 0 auto;
+#subheadingInfo{
+	float: left;
+	text-decoration: underline;
+	font-size: 20px;
 }
 
-table *{
-    color: #000;
-    padding: 0px;
-    margin: 0px;
+#extraInfo{
+	float: left;
+	color: #4B4D49;
+	font-size: 16px;
 }
 
-table tr td{
-    width: 50%;
+#extraInfo:hover{
+	color: #E065CA;
 }
 
-.classesCategoriesLeft{
-    float: left;
-    height: 190px;
-    width: 85%;
-    border: 3px dashed #000;
-    border-radius: 7px;
-    text-align: center;
-    margin: 0 auto 30px auto;
+#classPicture{
+	float: right;
+	height: 300px;
+	width: 50%;
+	border: 1px solid red;
+	margin-top: -300px;
+	background-image: url("../../../../../sewing.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-.classesCategoriesRight{
-    height: 190px;
-    width: 85%;
-    border: 3px dashed #000;
-    border-radius: 7px;
-    text-align: center;
-    margin: 0 auto 30px auto;
+form{
+	text-align: center;
+	margin: 0 auto;
+	color: #000;
+	border: 3px dotted orange;
+	border-radius: 7px;
 }
 
-.classesCategoriesLeft h2{
-    margin: 80px auto;
+#userEmail{
+	width: 30%;
+	text-align: center;
 }
 
-.classesCategoriesRight h2{
-    margin: 80px auto;
+#userName{
+	width: 30%;
+	text-align: center;
 }
 
-.classesCategoriesLeft:hover{
-	background-color: #FFF;
+#userComments{
+	width: 70%;
 }
 
-.classesCategoriesRight:hover{
-	background-color: #FFF;
-}
-
-#sewingBeginners{
-    background-color: darkcyan;
-}
-
-#moreSewing{
-    background-color: darkmagenta;
-}
-
-#patchwork{
-    background-color: crimson;
-}
-
-#dressmaking{
-    background-color: greenyellow;
-}
-
-#workshop{
-    background-color: mediumturquoise;
-}
-
-#parties{
-    background-color: navajowhite;
-}
-
-#quiltKnitAndNatter{
-    background-color: chocolate;
-}
-
-#childrensClasses{
-    background-color: deeppink;
-}
-
-#curtainsAndCushions{
-	background-color: #8C6C84;
-}
-
-#xmasWorkshops{
-	background-color: #0FBD7D;
+#userSubmit{
+	width: 100px;
 }
 
 #motoWrapper{
@@ -341,31 +303,32 @@ table tr td{
 }
 
 #moto{
-	display: none;
+        display: block;
 	margin-left: -115%;
 	float: left;
 	margin-top: 1.5em;
 	width: 900px;
 	-ms-transform: rotate(270deg); /* IE 9 */
-		-webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
-		transform: rotate(270deg);
-		color: #77BFF2;
-		font-size: 6em;
-		letter-spacing: 10px;
+        -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+        transform: rotate(270deg);
+        color: #77BFF2;
+        font-size: 6em;
+        letter-spacing: 10px;
 }
 
 
 
 .twitterWrapper{
+    display: block;
 	width: 330px;
 	height: 10em;
 	float: right;
-	margin-top: -76em;
+	margin-top: -101em;
 	margin-right: 10px;
 }
 
 .footerWrapper{
-	display: none;
+	display: block;
 	clear: both;
 	width: 100%;
 	height: auto;
@@ -412,7 +375,7 @@ table tr td{
 
 
 body{
-	background-image: url("../../../../../swirl_pattern/swirl_pattern.png");
+  background-image: url("../../../../../swirl_pattern/swirl_pattern.png");
 }
 
 a{
@@ -441,6 +404,7 @@ a{
 }
 
 #backupSocialGroup{
+        display: block;
 	float: right;
 	width: 60px;
 	height: auto;
@@ -490,7 +454,6 @@ a{
 .nav{
 	overflow: hidden;
 	text-align: center;
-	margin-top: -50px;
 	background-color: #E83199;
 	height: auto;
 	margin-top: -20px;
@@ -509,6 +472,13 @@ a{
 	color: #FAFAFA;
 }
 
+.fixed{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+	margin-top: 20px;
+}
 
 .contentWrapper{
 	margin-top: 7em;
@@ -520,7 +490,7 @@ a{
 	border-left-color: #E065CA;
 	border-right-color: #A31C8A;
 	border-bottom-color: #A31C8A;
-	height: 1200px;
+	height: 1600px;
 	width: 60%;
 	background-color: #FAFAFA;
 	font-family: 'Lobster', cursive;
@@ -533,6 +503,7 @@ a{
 	text-align: center;
 	font-size: 100px;
 	font-family: "Lobster";
+	text-shadow: 3px 3px 1px #000;
 }
 
 .rslides {
@@ -581,7 +552,7 @@ a{
 .writingWrapper > p{
 	text-align: center;
 	color: #000;
-	font-size: 30px;
+	font-size: 24px;
 }
 
 .writingWrapper > h6{
@@ -589,94 +560,58 @@ a{
 	text-align: center;
 }
 
-table{
-    width: 60%;
-    margin: 0 auto;
+#subheadingInfo{
+	float: left;
+	text-decoration: underline;
+	font-size: 20px;
 }
 
-table *{
-    color: #000;
-    padding: 0px;
-    margin: 0px;
+#extraInfo{
+	float: left;
+	color: #4B4D49;
+	font-size: 16px;
 }
 
-table tr td{
-    width: 50%;
+#extraInfo:hover{
+	color: #E065CA;
 }
 
-.classesCategoriesLeft{
-    float: left;
-    height: 190px;
-    width: 85%;
-    border: 3px dashed #000;
-    border-radius: 7px;
-    text-align: center;
-    margin: 0 auto 30px auto;
+#classPicture{
+	float: right;
+	height: 300px;
+	width: 50%;
+	border: 1px solid red;
+	margin-top: -300px;
+	background-image: url("../../../../../sewing.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-.classesCategoriesRight{
-    height: 190px;
-    width: 85%;
-    border: 3px dashed #000;
-    border-radius: 7px;
-    text-align: center;
-    margin: 0 auto 30px auto;
+form{
+	text-align: center;
+	margin: 0 auto;
+	color: #000;
+	border: 3px dotted orange;
+	border-radius: 7px;
 }
 
-.classesCategoriesLeft h2{
-    margin: 80px auto;
+#userEmail{
+	width: 30%;
+	text-align: center;
 }
 
-.classesCategoriesRight h2{
-    margin: 80px auto;
+#userName{
+	width: 30%;
+	text-align: center;
 }
 
-.classesCategoriesLeft:hover{
-	background-color: #FFF;
+#userComments{
+	width: 70%;
 }
 
-.classesCategoriesRight:hover{
-	background-color: #FFF;
-}
-
-#sewingBeginners{
-    background-color: darkcyan;
-}
-
-#moreSewing{
-    background-color: darkmagenta;
-}
-
-#patchwork{
-    background-color: crimson;
-}
-
-#dressmaking{
-    background-color: greenyellow;
-}
-
-#workshop{
-    background-color: mediumturquoise;
-}
-
-#parties{
-    background-color: navajowhite;
-}
-
-#quiltKnitAndNatter{
-    background-color: chocolate;
-}
-
-#childrensClasses{
-    background-color: deeppink;
-}
-
-#curtainsAndCushions{
-	background-color: #8C6C84;
-}
-
-#xmasWorkshops{
-	background-color: #0FBD7D;
+#userSubmit{
+	width: 100px;
 }
 
 #motoWrapper{
@@ -691,17 +626,17 @@ table tr td{
 }
 
 #moto{
-	display: none;
+        display: block;
 	margin-left: -115%;
 	float: left;
 	margin-top: 1.5em;
 	width: 900px;
 	-ms-transform: rotate(270deg); /* IE 9 */
-		-webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
-		transform: rotate(270deg);
-		color: #77BFF2;
-		font-size: 6em;
-		letter-spacing: 10px;
+        -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+        transform: rotate(270deg);
+        color: #77BFF2;
+        font-size: 6em;
+        letter-spacing: 10px;
 }
 
 
@@ -711,7 +646,7 @@ table tr td{
 	width: 330px;
 	height: 10em;
 	float: right;
-	margin-top: -76em;
+	margin-top: -101em;
 	margin-right: 10px;
 }
 
@@ -884,12 +819,13 @@ a{
 	border-left-color: #E065CA;
 	border-right-color: #A31C8A;
 	border-bottom-color: #A31C8A;
-	height: 1200px;
+	height: 1600px;
 	width: 60%;
 	background-color: #FAFAFA;
 	font-family: 'Lobster', cursive;
 	color: #cccccc;
-	z-index: 2;
+	z-index: 13;
+	position: relative;
 }
 
 #contentTitle{
@@ -897,6 +833,7 @@ a{
 	text-align: center;
 	font-size: 100px;
 	font-family: "Lobster";
+	text-shadow: 3px 3px 1px #000;
 }
 
 .rslides {
@@ -978,12 +915,34 @@ a{
 	background-image: url("../../../../../sewing.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
 
 form{
 	text-align: center;
 	margin: 0 auto;
 	color: #000;
+	border: 3px dotted orange;
+	border-radius: 7px;
+}
+
+#userEmail{
+	width: 38%;
+	text-align: center;
+}
+
+#userName{
+	width: 38%;
+	text-align: center;
+}
+
+#userComments{
+	width: 70%;
+	resize: none;
+}
+
+#userSubmit{
+	width: 100px;
 }
 
 #motoWrapper{
@@ -991,14 +950,13 @@ form{
 	width: 14%;
 	height: auto;
 	z-index: 10;
-	position: relative;
 	height: 1000px;
 	text-align: center;
 	margin-top: 20em;
 }
 
 #moto{
-        display: block;
+    display: block;
 	margin-left: -115%;
 	float: left;
 	margin-top: 1.5em;
@@ -1009,6 +967,7 @@ form{
         color: #77BFF2;
         font-size: 6em;
         letter-spacing: 10px;
+    z-index: 1;
 }
 
 
@@ -1018,11 +977,12 @@ form{
 	width: 330px;
 	height: 10em;
 	float: right;
-	margin-top: -76em;
+	margin-top: -101em;
 	margin-right: 10px;
 }
 
 .footerWrapper{
+	display: block;
 	clear: both;
 	width: 100%;
 	height: auto;
@@ -1260,6 +1220,46 @@ form{
 
 }
 
+@media screen and (max-width: 940px) { /*Earlier desolation of moto and moto wrapper*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+    #moto{
+    	display: none;
+    }
+    
+    #motoWrapper{
+    	display: none;
+    }
+
+}
+
+@media screen and (max-width: 885px) { /*Making height smaller for class Picture*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+    #classPicture{
+    	height: 200px;
+    }
+
+}
+
 @media screen and (max-width: 785px) { /*Size ajustment to the content title for laptop support (Overlapping) Again!!!*/
 
 	.gridContainer {
@@ -1276,8 +1276,40 @@ form{
     	display: none;
     }
 
-    #moto{
-    	display: none;
+}
+
+@media screen and (max-width: 590px) { /*Height adjustment to the content wrapper*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+    .contentWrapper{
+    	height: 1800px;
+    	width: 800px;
+    	margin-left: 8.5%;
     }
+    
+    .nav{
+    	width: 900px;
+    }
+    
+    .footerWrapper{
+	width: 899px;
+	}
+	
+	.headWrapper{
+		width: 899px;
+	}
+	
+	#pageTitle{
+		width: 899px;
+	}
 
 }

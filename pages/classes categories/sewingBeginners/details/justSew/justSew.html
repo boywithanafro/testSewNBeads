@@ -7,7 +7,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link href="justSew.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" type="image/png" href="../../../../../favicon.png"/>
-	<title>Sew'n'Beads | About Us</title>
+	<title>Sew'n'Beads | Sewing Beginners | Just Sew</title>
 </head>
 <body>
 
@@ -69,7 +69,7 @@
 
 		<div class="contentWrapper">
 
-			<h1 id="contentTitle">Just Sew</h1>
+			<h1 id="contentTitle">Just Sew</h1><br>
 
 			<ul class="rslides">
 				<li><img src="../../../../../slideshowImages/image1.min.jpg" alt=""></li>
@@ -78,6 +78,7 @@
 			</ul>
 
 			<div class="writingWrapper">
+							<p><u>Just Sew:</u></p>
                             <p><br>In the five weeks, you could learn how to sew, make cushion covers, learn to insert zips, maybe try a little patchwork. The five weeks are yours and I will help you to learn whatever you want to make. This is just some extra infomation to fill in the space which would be filled with some proper infomation so yer, also this is the best thing of the entire history so yer.</p>
                             <br><br>
 							<p id="subheadingInfo">Cost of Course:</p><br><br>
@@ -95,22 +96,27 @@
 							<div id="classPicture">
 								
 							</div>
-							<br><br>
+							<br><br><br><br>
+
+
 
 							<form action="form_process.php" method="post" name="contact_form">
 							Please contact Us here if Interested:<br><br>
-                            Email:<br>
-							<input type="text" name="user_email"><br>
-							<textarea name="comments" cols="70" rows="4" placeholder=
-"Name
-Age
-Gender
+                            Email: &nbsp;
+							<input type="text" name="user_email" id="userEmail" placeholder="example@example.com"><br>
+							Name: &nbsp;
+							<input type="text" name="user_name" id="userName" placeholder="John Smith"><br><br>
+							<textarea id="userComments" name="user_comments" rows="5" placeholder=
+"Dates availible etc:
 
-Liile bit of information. Dates availible etc."
+Comments:"
 							></textarea>
 							<br>
-							<input type="Submit" value="Send">
+							<input type="Submit" value="Send" id="userSubmit">
 							</form>
+
+
+
 
                             <br><br><br><br>
 
@@ -137,13 +143,12 @@ Liile bit of information. Dates availible etc."
 	</footer>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="../js/responsiveslides.min.js"></script>
+	<script src="../../../../../js/responsiveslides.min.js"></script>
 
 	<script>
 	$(function() {
 		$(".rslides").responsiveSlides();
 	});
-</script>
-
+	</script>
 </body>
 </html>
