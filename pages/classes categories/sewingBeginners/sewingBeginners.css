@@ -343,8 +343,7 @@ a{
 
 #pageTitle{
 	text-align: center;
-        color: red;
-	/*color: #E065CA;*/
+	color: #E065CA;
 	margin-top: -265px;
 	font-size: 125px;
 	width: 100%;
@@ -1303,5 +1302,67 @@ table tr td h3:hover{
     #moto{
     	display: none;
     }
+
+}
+
+@media screen and (max-width: 597px) { /*Size ajustment to the content title for laptop support (3 lines) Again!!!*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+    #contentTitle{
+        font-size: 50px;
+    }
+
+    #backupSocialGroup{
+    	display: none;
+    }
+
+    #moto{
+    	display: none;
+    }
+
+}
+
+@media screen and (max-width: 590px) { /*final overall positions*/
+
+	.gridContainer {
+		width: 88.5%;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+		clear: none;
+		float: none;
+		margin-left: auto;
+	}
+
+    .contentWrapper{
+    	height: 1800px;
+    	width: 800px;
+    	margin-left: 8.5%;
+    }
+    
+    .nav{
+    	width: 900px;
+    }
+    
+    .footerWrapper{
+	width: 899px;
+	}
+	
+	.headWrapper{
+		width: 899px;
+	}
+	
+	#pageTitle{
+		width: 899px;
+	}
 
 }
